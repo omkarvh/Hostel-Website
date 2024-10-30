@@ -9,114 +9,128 @@
     <!-- Bootstrap Bundle JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Your custom CSS and other resources -->
-   <!-- fonts-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fonts-->
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
    
-    <link rel="stylesheet" href="style.css">
+   
+   
+   <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="design.css">
 
     
 </head>
 <body>
 
-    <!--Branding-->
+
   
-             <!-- Navbar -->
-             <nav class="navbar navbar-expand-lg fixed-top ">
-              
-              
-                <div>
-                   <img class="logo p-2" src="images\Carosol\annapoorneshwari-high-resolution-logo-transparent.png" alt="" width="30" height="24">
-                   
-
-                </div>            
-               
-               
-               <div class="container-fluid">
-                 
-                   <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
-                       <ul class="navbar-nav ">
-                          
-                           <li class="nav-item ">
-                               <a class="nav-link active" aria-current="page" href="#">HOME</a>
-                           </li>
-                           <li class="nav-item ">
-                               <a class="nav-link" href="#rooms">ROOMS</a>
-                           </li>
-                           <li class="nav-item">
-                               <a class="nav-link" href="#services">SERVICES</a>
-                           </li>
-                           <li class="nav-item">
-                               <a class="nav-link" href="#about">ABOUT US</a>
-                           </li>
-                           
-                           <li class="nav-item">
-                               <a class="nav-link" href="#contact">CONTACT US</a>
-                           </li>
-                       </ul>
-                   </div>
-               </div>
-           </nav>
-           <!-- Navbar End -->
-            
-            
-            <!-- Navbar End -->
-        
-
-
-    <!-- Carousel -->
-    <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
-
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="images\Carosol\c1.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-sm-block">
-                    <h5 class="head-corosoul">Welcome to Annpoorneshwari Hostel</h5>
-                    <p>A special place where you can stay and relax</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="images\Carosol\c2.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5 class="head-corosoul">Serving travellers on a budget</h5>
-                    <p>We provide comfortable accommodation for you.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="images\Carosol\c3.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5 class="head-corosoul">A perfect and affordable place to stay</h5>
-                    <p>Take advantage of the budget-oriented accommodation.</p>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+            <!-- Navbar -->
+<nav class="navbar navbar-expand-lg  fixed-top" aria-label="Main navigation">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            Luxury Hostel</a>  
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-        
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#About">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Rooms1">Rooms</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Amenities1">Amenities</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Contact1">Contact</a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <!-- Carousel End -->
+</nav>
+<!-- Navbar End -->
+        
+<!--Hero-->
+<section id="main">
+
+    <div class="hero-section">
+        <!-- Background video -->
+        <video autoplay muted loop class="hero-video">
+          <source src="images\Hero\main.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+ 
+
+        <div class="hero-caption">
+            <P>WELCOME TO</P>
+            <H1>She Nest PG</H1>
+            <h5>Luxury Pg For Girls</h5>
+            <button type="button" class="btn btn-light" onclick="window.location.href='#About'">LEARN MORE</button>
+
+        </div>
+    
+        <!-- Centered caption content 
+        <div class="hero-caption">
+          <h1>Your Hero Caption Here</h1>
+          <p>Engaging and descriptive text goes here. Add more details as needed.</p>
+          <a href="#" class="btn btn-hero">Learn More</a>
+        </div>
+      </div>
+  -->
+
+</section>
+<!--Hero-->
+
+<!-- Logo-->
+
+<div class="container" id="About">
+    <div class="row">
+      <div class="col-12 bg d-flex justify-content-center align-items-center text-center">
+        <h1 class="">About</h1>
+
+      </div>
+    </div>
+  </div>
+
+<!-- Section -->
    
 
-
+<!--About Section-->
+<section class="about-section py-5" >
+    
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Column: Text -->
+        <div class="col-lg-6 col-sm-12 ">
+          <h3 class="mb-3">Welcome to your luxurious home away from home</h3>
+          <p>
+            Experience comfort, safety, and luxury at our exclusive girls' hostel. Designed for modern living, we offer spacious rooms, high-speed Wi-Fi, gourmet meals, 24/7 security, and recreational facilities. Your ideal home away from home awaits—where elegance meets convenience.
+          </p>
+        </div>
+        
+        <!-- Right Column: Image -->
+        <div class="col-lg-6 col-sm-12 d-flex justify-content-center">
+          <img class="about-img img-fluid rounded" src="images/About us/Since 2004.jpg" alt="About Us Image">
+        </div>
+      </div>
+    </div>
+  </section>
+<!--About Section-->
 
    
-    <!-- Rooms Section -->
-         
-    <div class="container" id="rooms">
+<!--Services Logo-->
+
+    <div class="container" id="Rooms1">
         <div class="row">
           <div class="col-12 bg d-flex justify-content-center align-items-center text-center">
             <h1 class="">Rooms</h1>
@@ -125,216 +139,313 @@
         </div>
       </div>
 
-    <!--room logo ends-->
-<div class="container" >
-    <div class="row">
-        <div class="col-sm-12 col-md-4 ">
-            <div class="border text-center p-2">
-                <img class="Room-img" src="images\Rooms\single bed.jpg" alt="" >
-            <p class="p-2">Single Room with attached Bathroom</p>
-            </div>
-            
-        </div>
+  <!-- Rooms Section -->
 
-        <div class="col-sm-12 col-md-4 ">
-            <div class="border text-center p-2">
-                <img class="Room-img" src="images\Rooms\double bed.jpg" alt="" >
-            <p class="p-2">Double Bed Room with attached Bathroom</p>
-            </div>
-            
-        </div>
-
-        <div class="col-sm-12 col-md-4 ">
-            <div class="border text-center p-2">
-                <img class="Room-img" src="images\Rooms\3 bed.png" alt="" >
-            <p class="p-2">Three Bed's Room with attached Bathroom</p>
-            </div>
-            
-        </div>
-
-      
-
-    
-    </div>
-</div>
-    
-    
+  <section id="Rooms" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-sm-12">
+          <!-- Room Image -->
+          <div class="Rooms-pic">
+            <img class="Room-img img-fluid w-100 rounded" src="images/Rooms/single bed.jpg" alt="Single Bed Room">
+          </div>
   
+          <!-- Room Text -->
+          <div class="Rooms-text  p-3 mt-2 ">
+            <p>1 adult</p>
+            <h5>Single Occupancy</h5>
+            <p>Amenities: Bed, Attached Washroom, Cupboard & Kitchen</p>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-sm-12 ">
+            <!-- Room Image -->
+            <div class="Rooms-pic ">
+              <img class="Room-img img-fluid w-100 rounded" src="images/Rooms/double bed.jpg" alt="Single Bed Room">
+            </div>
     
+            <!-- Room Text -->
+            <div class="Rooms-text  p-3 mt-2">
+              <p>2 adults</p>
+              <h5>Duel Occupancy</h5>
+              <p>Amenities: Bed, Attached Washroom, Cupboard & Kitchen</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-12">
+            <!-- Room Image -->
+            <div class="Rooms-pic  ">
+              <img class="Room-img img-fluid w-100 rounded" src="images\Rooms\3 bed.png" alt="Single Bed Room">
+            </div>
     
-    <!-- Rooms Section End -->
+            <!-- Room Text -->
+            <div class="Rooms-text  p-3 mt-2">
+              <p>3 adult | Family</p>
+              <h5>Master Occupancy</h5>
+              <p>Amenities: Bed, Common Washroom, Cupboard & Open kitchen</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+ 
+
+<!-- Rooms Section End -->
+
+
+
+<!-- Open Kitchen -->
+<section id="Open-Kitchen" class="py-5">
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-lg-6 col-sm-12">
+                <div class="Kitchen-text text-sm-end">
+                    <h3>Open Kitchen</h3>
+                    <p class="pt-sm-5">
+                        Experience culinary freedom in our open kitchen, designed for residents to prepare their own meals in a spacious and inviting environment. Fully equipped with modern appliances and utensils, it’s perfect for cooking enthusiasts and those looking to enjoy a taste of home. Gather with friends, share recipes, and create lasting memories in this communal space, where culinary creativity flourishes.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-sm-12">
+                <div class="Kitchen-img text-center">
+                    <img class="img-fluid kitchen-image rounded" src="images/Services/Kitchen.jpg" alt="Open Kitchen">
+                    <p class="quote">Where culinary dreams come alive—our open kitchen invites you to create, share, and savor every delicious moment together!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 col-sm-12">
+                <div class="Kitchen-img ">
+                    <img class="img-fluid terrace-image rounded" src="images/Services/terrace.jpg" alt="Open Terrace">
+                    <p class="text-center quote">Embrace the breeze, soak in the sun—our terrace is your sanctuary for relaxation and inspiration under the open sky.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-sm-12">
+                <div class="Kitchen-text ">
+                    <h3>Open Terrace</h3>
+                    <p class="pt-sm-5">
+                        Step onto our open terrace, your personal oasis of tranquility. Bathed in natural light and fresh air, this spacious area is perfect for relaxing, socializing, or enjoying a quiet moment with a book. Whether you're soaking up the sun during the day or stargazing at night, our terrace provides a serene escape from the hustle and bustle, making it the ideal spot to unwind and rejuvenate.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Open Kitchen -->
+
 <!--Services Logo-->
 
-    <div class="container" id="services">
-        <div class="row">
-          <div class="col-12 bg d-flex justify-content-center align-items-center text-center">
-            <h1 class="">Services</h1>
-  
-          </div>
-        </div>
+<div class="container" id="Amenities1">
+    <div class="row">
+      <div class="col-12 bg d-flex justify-content-center align-items-center text-center">
+        <h1 class="">Amenities</h1>
+
       </div>
-
-
-
-
-
-
-       <!-- Services Section -->
- 
-       <div class="container mt-4 Room p-1">
-
-
-        <div class="row justify-content-evenly align-items-center">
-            <div class="col-sm-12 col-md-3 col-lg-3 text-center">
-                <img class="Room-images img-fluid" src="images\Services\food.jpg" alt="">
-                <h6>North & South Indian food</h6>
-            </div>
-
-            <div class="col-sm-12 col-md-3 col-lg-3 text-center">
-                <img class="Room-images img-fluid" src="images\Services\Bathroom.jpg" alt="">
-                <h6>24 Hours cold/hot water</h6>
-            </div>
-
-            <div class="col-sm-12 col-md-3 col-lg-3 text-center">
-                <img class="Room-images img-fluid" src="images\Services\Fridge.jpg" alt="">
-                <h6>Cold storage</h6>
-            </div>
-
-            <div class="col-sm-12 col-md-3 col-lg-3 text-center">
-                <img class="Room-images img-fluid" src="images\Services\Kitchen.jpg" alt="">
-                <h6>Open kitchen</h6>
-            </div>
-           
-        </div>
-
-        <div class="row justify-content-evenly align-items-center">
-            <div class="col-sm-12 col-md-3 col-lg-3 text-center">
-                <img class="Room-images img-fluid" src="images\Services\parking.jpg" alt="">
-                <h6>Vechile Parking</h6>
-            </div>
-
-            <div class="col-sm-12 col-md-3 col-lg-3 text-center">
-                <img class="Room-images img-fluid" src="images\Services\wifi.jpg" alt="">
-                <h6>High Speed Wifi</h6>
-            </div>
-
-            <div class="col-sm-12 col-md-3 col-lg-3 text-center">
-                <img class="Room-images img-fluid" src="images\Services\terrace.jpg" alt="">
-                <h6>Open Terrace</h6>
-            </div>
-
-            <div class="col-sm-12 col-md-3 col-lg-3 text-center">
-                <img class="Room-images img-fluid" src="images\Services\washing machine.jpg" alt="">
-                <h6>Washing machine</h6>
-            </div>
-           
-        </div>
-
+    </div>
+  </div>
+<!-- Amenities Section -->
+<section id="Amenities" class="py-5">
+    <div class="container">
         
-    </div>
-    <!-- Services Section End -->
-
-    <!--About us logo-->
-    <div class="container" id="about">
-        <div class="row">
-          <div class="col-12 bg d-flex justify-content-center align-items-center text-center">
-            <h1 class="">About Us</h1>
-  
-          </div>
+        <div class="row text-center">
+            <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                <div class="amenity-item">
+                    <i class="fas fa-wifi fa-3x"></i>
+                    <h5>WiFi</h5>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                <div class="amenity-item">
+                    <i class="fa-regular fa-snowflake fa-3x"></i>
+                    <h5>Fridge</h5>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                <div class="amenity-item">
+                    <i class="fa-solid fa-shirt fa-3x"></i>
+                    <h5>Washing Machine</h5>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                <div class="amenity-item">
+                    <i class="fas fa-car fa-3x"></i>
+                    <h5>Parking</h5>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                <div class="amenity-item">
+                    <i class="fas fa-box fa-3x"></i>
+                    <h5>Storage</h5>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                <div class="amenity-item">
+                    <i class="fas fa-water fa-3x"></i>
+                    <h5>Hot Water</h5>
+                </div>
+            </div>
         </div>
+    </div>
+</section>
+<!-- Amenities Section -->
+<!--Services Logo-->
+
+<div class="container" id="Testimonials1">
+    <div class="row">
+      <div class="col-12 bg d-flex justify-content-center align-items-center text-center">
+        <h1 class="">Testimonials</h1>
+
       </div>
-
-    <!--About us-->
-    <div class="container mb-5 Room p-1">
-       
+    </div>
+  </div>
+<!--Testimonials-->
+<!-- Customer Testimonials Section -->
+<section id="Testimonials" class="py-5 bg-light">
+    <div class="container">
+        
         <div class="row">
-            <div class="col-sm-12 col-lg-6 ">
-                <img class="pg-image" src="images\About us\about.jpg" alt="">
-            </div>
-            <div class="col-sm-12 col-lg-6">
-                <h6 class="fw-normal pg-description bg">
-                    Annapoorneshwari Ladies PG, nestled in Bidar's vibrant Gumpa area, offers a luxurious living experience tailored to the modern woman. Our PG stands as a sanctuary of comfort and convenience, providing spacious and elegantly furnished rooms designed for relaxation and privacy. Whether you're a student or a working professional, our amenities cater to your every need, from high-speed internet and nutritious meals to round-the-clock security.<br><br>
-                    Safety is paramount at Annapoorneshwari Ladies PG, with advanced security features ensuring peace of mind for our residents. Situated in the heart of Bidar, our PG offers easy access to transportation, educational institutions, and recreational facilities, making daily life a breeze.<br><br>
-                    But what truly sets us apart is our sense of community. Within our walls, you'll find a supportive network of like-minded individuals, fostering friendships and shared experiences. Experience comfort, convenience, and camaraderie at Annapoorneshwari Ladies PG, where every moment is crafted with your well-being in mind.
-                  </h6>
-            </div>
-
-           
-        </div>
-    </div>
-
-    <!--About us end-->
-
-        <!--Contact us logo-->
-        <div class="container" id="contact">
-            <div class="row">
-              <div class="col-12 bg d-flex justify-content-center align-items-center text-center">
-                <h1 class="">Contact</h1>
-      
-              </div>
-            </div>
-          </div>
-    
-
-    <!--Contact us footer-->
-    <div class="container mt-4 Room p-1">
-  
-        <div class="row justify-content-start align-items-start contact">
-            <!-- Container 1: Address, Contact Info, Map -->
-            <div class="col-md-6 p-5 Address">
-                <h6>Our Address</h6>
-                <div class="adrs">
-                <p>Hno. 9-12-365/a, Vidhya Nagar Colony</p>
-                <p>Call us: 8951374619</p>
-                <p>Mail us: omkarvh56@gmail.com</p>
-                <p>Our timing: 10 AM to 9 PM</p>
-            </div>
-                <!-- Embed Google Maps iframe -->
-                <div class="map-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3822.253886847667!2d-122.08412068537645!3d37.422055400128556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba3e09a995ad%3A0x4b64a9c5222958f7!2sGoogleplex!5e0!3m2!1sen!2sus!4v1633543522504!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="testimonial-card p-4 border rounded">
+                    <p class="testimonial-text">"Living here has been an amazing experience! The open kitchen and terrace are perfect for socializing, and the amenities are top-notch!"</p>
+                    <h5 class="customer-name">- Priya S.</h5>
                 </div>
             </div>
-    
-            <!-- Container 2: Contact Form -->
-            <div class="col-md-6 align-self-center p-5 bg">
-               
-                    <form>
-                        <div class="mb-3">
-                            <label for="inputName" class="form-label">Your Name</label>
-                            <input type="text" class="form-control" id="inputName" placeholder="Enter your name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="inputPhoneNumber" class="form-label">Phone Number</label>
-                            <input type="tel" class="form-control" id="inputPhoneNumber" placeholder="Enter your phone number" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="testimonial-card p-4 border rounded">
+                    <p class="testimonial-text">"I love the cozy atmosphere of this hostel. It truly feels like a home away from home. Highly recommend!"</p>
+                    <h5 class="customer-name">- Aisha K.</h5>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="testimonial-card p-4 border rounded">
+                    <p class="testimonial-text">"The security and cleanliness here are exceptional. I feel safe and comfortable at all times!"</p>
+                    <h5 class="customer-name">- Neha R.</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Customer Testimonials Section -->
+
+
+<!--Services Logo-->
+
+<div class="container" id="Contact1">
+    <div class="row">
+      <div class="col-12 bg d-flex justify-content-center align-items-center text-center">
+        <h1 class="">Contact Us</h1>
+
+      </div>
+    </div>
+  </div>
+
+<!-- Contact Section -->
+<section id="Contact" class="py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Map Section -->
+            <div class="col-lg-6 col-sm-12 mb-4">
                 
-         
-            
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3796.9446291355125!2d77.51132797554742!3d17.888042488188873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcec6fdb9d4ba49%3A0x5ff2924135ba2389!2sBasava%20Nagar%2C%20Bidar%2C%20Karnataka%20585403!5e0!3m2!1sen!2sin!4v1730328037214!5m2!1sen!2sin"
+                        width="100%"
+                        height="300"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"></iframe>
+
+                </div>
+            </div>
+
+            <!-- Contact Form Section -->
+            <div class="col-lg-6 col-sm-12 mb-4"  >
+           
+                <form action="https://formspree.io/f/mjkvygkk" method="POST" id="myForm">
+                    <div class="row mb-3">
+                        <div class="col-lg-6">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="firstName" name="firstName" required >
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                
+                    <div class="row mb-3">
+                        <div class="col-lg-6">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" required>
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="address" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="address" name="address" required>
+                        </div>
+                    </div>
+                
+                    <div class="mb-3">
+                        <label for="comment" class="form-label">Comment</label>
+                        <textarea class="form-control" id="comment" name="comment" rows="4" required></textarea>
+                    </div>
+                
+                    <button type="submit" class="btn btn-primary" onclick="clear()">Submit</button>
+                </form>
+                
             </div>
         </div>
     </div>
-    
-    <footer class="mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col text-center">
-                    <!-- Social Media Icons -->
-                    <a href="#" class="me-3"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="me-3"><i class="bi bi-instagram"></i></a>
-                </div>
+</section>
+<!-- Contact Section -->
+<div class="elfsight-app-ea33859d-4bd4-4c2e-8f51-abf5ac0a96b3" data-elfsight-app-lazy></div>
+<footer class="bg-light text-dark mt-5">
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h5>About Us</h5>
+                <p>Discover more about our luxurious girls' hostel and the services we offer for a comfortable living experience.</p>
             </div>
-            <div class="row mt-2">
-                <div class="col text-center">
-                    <!-- Copyright -->
-                    <p>All rights reserved &copy; 2024</p>
-                </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#Rooms" class="text-dark">Rooms</a></li>
+                    <li><a href="#Amenities" class="text-dark">Amenities</a></li>
+                    <li><a href="#Open-Kitchen" class="text-dark">Open Kitchen</a></li>
+                    <li><a href="#Contact" class="text-dark">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-12 mb-4">
+                <h5>Contact Us</h5>
+                <p>Email: info@luxurioushostel.com</p>
+                <p>Phone: +91 8951374619</p>
+                <p>Address: Behind Siddhi Vinayak Complex Gumpa Bidar 585401</p>
             </div>
         </div>
-    </footer>
+        <div class="text-center py-3">
+            <a href="#" class="text-dark me-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-dark me-3"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-dark me-3"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-dark"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="text-center">
+            <p>&copy; 2024 Luxury Girls Hostel. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
 
+<script>
+   
+        function clear() {
+        document.getElementById("myForm").reset();
+    }
+    
+   </script>
 
+<script src="https://static.elfsight.com/platform/platform.js" async></script>
 
     <!--Contact us footer ends-->
 
