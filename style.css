@@ -4,30 +4,110 @@ body{
   color: #623E2A;
 }
 
-
-
-.branding{
-  background-color: #F4F1ED;
+/*menu*/
+/* General Navbar Styles */
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0 20px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: background 0.3s ease-in-out, padding 0.3s ease-in-out;
+  background: transparent; /* Transparent by default */
+  color: white;
 }
 
-.branding-img{
-  height: 65px;  
-}
-.navbar-brand{
-  color: whitesmoke;
+/* Dark background when scrolling */
+.menu.scrolled {
+  background: rgba(0, 0, 0, 0.9); /* Dark background */
+  padding: 10px 20px; /* Slightly shrink navbar */
 }
 
-.navbar{
-  font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 700;
+/* Branding */
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
+
+.branding img {
+  height: 40px;
+}
+
+/* Navigation */
+.nav-main {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-main .navlink a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+/* Contact Number */
+.contact-Num {
+  display: flex;
+  align-items: center;
+}
+
+/* Burger Menu Icon - Hidden by default */
+.burger-menu {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Responsive Styles for Small Screens */
+@media (max-width: 768px) {
+  .nav-main {
+      display: none; /* Hide menu by default */
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      right: 0;
+      background: rgba(0, 0, 0, 0.9);
+      width: 200px;
+      text-align: center;
+      padding: 10px;
+      border-radius: 5px;
+  }
+
+  .nav-main.active {
+      display: flex; /* Show menu when active */
+  }
+
+  .burger-menu {
+      display: block; /* Show burger icon on small screens */
+  }
+
+  .contact-Num {
+      display: none; /* Hide contact number on small screens */
+  }
+}
+
+
+.call{
+  height: 35px;
+}
+
+
 
 
 /* hero section*/
  /* Fullscreen hero section styling */
  .hero-section {
   position: relative;
-  height: 90vh;
+  height: 100vh;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -255,29 +335,6 @@ nav.navbar {
   }
 }
 
-.marquee {
-  width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  box-sizing: border-box;
-  padding: 10px 0; /* Optional, adds padding for better spacing */
-}
 
-.marquee-text {
-  display: inline-block;
-  padding-left: 100%;
-  animation: marquee-animation 15s linear infinite;
-  font-size: 18px; /* You can adjust the font size */
-  font-weight: bold; /* Optional, makes the text bold */
-  color: #000; /* Optional, you can change the text color */
-}
 
-@keyframes marquee-animation {
-  from {
-      transform: translateX(0);
-  }
-  to {
-      transform: translateX(-100%);
-  }
-}
 

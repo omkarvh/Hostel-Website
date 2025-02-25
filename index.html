@@ -30,43 +30,32 @@
     
 </head>
 <body>
-
-
-  
-            <!-- Navbar -->
-<nav class="navbar navbar-expand-lg  fixed-top" aria-label="Main navigation">
-    <div class="container">
-        <a class="navbar-brand" href="#">
-            Luxury Hostel</a>  
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
-        </button>
-
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#About">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#Rooms1">Rooms</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#Amenities1">Amenities</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#Contact1">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#Contact1">+91 8951374619</a>
-                </li>
-            </ul>
+    <nav class="menu fixed-top">
+        <div class="branding">
+            <img src="" alt="">
+            <h4>Luxury PG</h4>
         </div>
-    </div>
-</nav>
-<!-- Navbar End -->
+
+        <!-- Burger Menu Icon -->
+        <div class="burger-menu" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <ul class="nav-main">
+            <li class="navlink"><a href="#">Home</a></li>
+            <li class="navlink"><a href="#About">About</a></li>
+            <li class="navlink"><a href="#Rooms">Rooms</a></li>
+            <li class="navlink"><a href="#Amenities">Amenities</a></li>
+            <li class="navlink"><a href="#Contact">Contact</a></li>
+        </ul>
+
+        <div class="contact-Num">
+            <h4>  +91 8951374619</h4>
+        </div>
+    </nav>
+  
+
+
 
        
 <!--Hero-->
@@ -86,7 +75,10 @@
             <H1>Annapurneshwari Girls Pg</H1>
             <h5>Luxury Pg For Girls</h5>
             <p>Whether you’re a student, working professional, or traveler, our facility ensures comfort, safety, and affordability</p>
-            <button type="button" class="btn btn-light" onclick="window.location.href='#About'">LEARN MORE</button>
+            <button type="button" class="btn btn-light" onclick="window.location.href='tel:+918951374619'">
+                <img class="call" src="images/icons/call.png" alt=""> +91 8951374619
+            </button>
+            
 
         </div>
     
@@ -100,13 +92,7 @@
   -->
 
 </section>
-<!--marquee-->
-<div class="marquee">
-    <div class="marquee-text">
-        Bookings Open!.... Contact Us: +91 8951374619... Limited slots for this month
-    </div>
-</div>
-<!--marquee--> 
+
 <!--Hero-->
 
 <!-- Logo-->
@@ -318,6 +304,8 @@
       </div>
     </div>
   </div>
+
+
 <!-- Amenities Section -->
 <section id="Amenities" class="py-5">
     <div class="container">
@@ -374,33 +362,10 @@
     </div>
   </div>
 <!--Testimonials-->
-<!-- Customer Testimonials Section -->
-<section id="Testimonials" class="py-5 bg-light">
-    <div class="container">
-        
-        <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                <div class="testimonial-card p-4 border rounded">
-                    <p class="testimonial-text">"Living here has been an amazing experience! The open kitchen and terrace are perfect for socializing, and the amenities are top-notch!"</p>
-                    <h5 class="customer-name">- Priya S.</h5>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                <div class="testimonial-card p-4 border rounded">
-                    <p class="testimonial-text">"I love the cozy atmosphere of this hostel. It truly feels like a home away from home. Highly recommend!"</p>
-                    <h5 class="customer-name">- Aisha K.</h5>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                <div class="testimonial-card p-4 border rounded">
-                    <p class="testimonial-text">"The security and cleanliness here are exceptional. I feel safe and comfortable at all times!"</p>
-                    <h5 class="customer-name">- Neha R.</h5>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Customer Testimonials Section -->
+
+<!-- Elfsight Google Reviews | Untitled Google Reviews -->
+<script src="https://static.elfsight.com/platform/platform.js" async></script>
+<div class="elfsight-app-54473da0-e8f4-432f-919f-1d0c70e7406e" data-elfsight-app-lazy></div>
 
 
 <!--Services Logo-->
@@ -512,7 +477,24 @@
 
 <script src="https://static.elfsight.com/platform/platform.js" async></script>
 
+<script >
+    // Function to toggle the navbar background on scroll
+window.addEventListener("scroll", function () {
+    let navbar = document.querySelector(".menu");
+    if (window.scrollY > 50) {
+        navbar.classList.add("scrolled"); // Add dark background when scrolling
+    } else {
+        navbar.classList.remove("scrolled"); // Make it transparent at the top
+    }
+});
 
+// Function to toggle mobile menu
+function toggleMenu() {
+    let navMain = document.querySelector(".nav-main");
+    navMain.classList.toggle("active");
+}
+
+</script>
     <!--Contact us footer ends-->
 
     <!-- Optional JavaScript; choose one of the two! -->
